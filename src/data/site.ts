@@ -8,6 +8,5 @@ export const siteConfig = {
   linkedinUrl: "https://www.linkedin.com/in/leanne-branch-85581826/",
   resumeUrl:
     "https://docs.google.com/document/d/1i6kbJ3GgF-hmFAcpj-tvO0HhwoT8Mjiy/edit?usp=sharing&ouid=113238766093841142326&rtpof=true&sd=true",
-  // Filled in after the first Vercel deploy (used for metadataBase/sitemap).
-  siteUrl: "https://portfolio-webpage.vercel.app",
+  siteUrl: "https://portfolio-webpage-pink-theta.vercel.app",
 } as const;

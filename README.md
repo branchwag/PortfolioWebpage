@@ -2,7 +2,7 @@
 
 My personal portfolio site, built with [Next.js](https://nextjs.org/) (App Router), TypeScript, and Tailwind CSS v4, deployed on [Vercel](https://vercel.com/).
 
-Live site: _added after first deploy_
+Live site: https://portfolio-webpage-pink-theta.vercel.app/
 
 ## Featured projects
 
