@@ -1,14 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg: #0d0b14;
-  --color-surface: #171420;
-  --color-surface-hover: #1f1a2c;
-  --color-border: #2c2740;
-  --color-text: #d8d4e0;
-  --color-text-muted: #8b849c;
-  --color-accent: #4ade80;
-  --color-accent-hover: #6ee89a;
+  /* NeoRavit cyberpunk palette (from channel graphics) */
+  --color-bg: #0a0c12;
+  --color-surface: #0d1119;
+  --color-surface-hover: #121a28;
+  --color-border: rgba(79, 195, 247, 0.18);
+  --color-border-strong: rgba(79, 195, 247, 0.4);
+  --color-text: #d8f0ff;
+  --color-text-muted: #8ba9bd;
+  --color-accent: #4fc3f7;
+  --color-accent-hover: #7fd4fa;
+
+  /* accent set */
+  --color-nr-cyan: #4fc3f7;
+  --color-nr-purple: #b478ff;
+  --color-nr-green: #50c878;
+  --color-nr-amber: #fab432;
+
+  --nr-grid: rgba(79, 195, 247, 0.04);
 }
 
 @theme inline {
@@ -16,15 +26,74 @@
   --color-surface: var(--color-surface);
   --color-surface-hover: var(--color-surface-hover);
   --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
   --color-text: var(--color-text);
   --color-text-muted: var(--color-text-muted);
   --color-accent: var(--color-accent);
   --color-accent-hover: var(--color-accent-hover);
-  --font-sans: var(--font-inter);
+  --color-nr-cyan: var(--color-nr-cyan);
+  --color-nr-purple: var(--color-nr-purple);
+  --color-nr-green: var(--color-nr-green);
+  --color-nr-amber: var(--color-nr-amber);
+  --font-sans: var(--font-share-tech-mono);
   --font-mono: var(--font-share-tech-mono);
 }
 
 body {
   background: var(--color-bg);
   color: var(--color-text);
+  font-family: var(--font-share-tech-mono), ui-monospace, monospace;
+}
+
+/* Faint cyber grid overlay, fixed behind all content */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--nr-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--nr-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Uppercase, letter-spaced "eyebrow" label above section headings */
+.nr-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.7rem;
+  line-height: 1;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.nr-eyebrow::before {
+  content: "";
+  width: 1.4rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+/* Bordered "node" panel — the core building block of the NeoRavit graphics */
+.nr-panel {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.nr-panel-hover:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: 0 0 26px -8px rgba(79, 195, 247, 0.5);
+}
+
+/* Cyan text glow for headings/logo */
+.nr-glow {
+  text-shadow: 0 0 18px rgba(79, 195, 247, 0.35);
 }

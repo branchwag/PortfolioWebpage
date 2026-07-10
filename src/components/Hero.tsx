@@ -6,8 +6,9 @@ export default function Hero() {
     <section id="about" className="mx-auto max-w-5xl px-6 py-24">
       <div className="flex flex-col items-center gap-12 md:flex-row">
         <div className="flex flex-col items-center text-center md:items-start md:text-left">
-          <h1 className="font-mono text-3xl font-medium text-text sm:text-4xl">
-            Hi, I&apos;m LeAnne.
+          <span className="nr-eyebrow mb-5">{"// system online"}</span>
+          <h1 className="text-3xl text-text nr-glow sm:text-4xl">
+            <span className="text-accent">&gt;</span> Hi, I&apos;m LeAnne.
           </h1>
           <p className="mt-6 max-w-xl leading-relaxed text-text-muted">
             I&apos;m a software engineer and master&apos;s student who used to
@@ -20,26 +21,29 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
               href="#contact"
-              className="rounded border border-accent px-6 py-2 text-accent transition-colors hover:bg-accent hover:text-bg"
+              className="border border-accent px-6 py-2 text-xs uppercase tracking-[0.18em] text-accent transition-colors hover:bg-accent hover:text-bg"
             >
               Get in touch
             </a>
             <a
               href="#projects"
-              className="rounded border border-border px-6 py-2 text-text transition-colors hover:border-accent hover:text-accent"
+              className="border border-border px-6 py-2 text-xs uppercase tracking-[0.18em] text-text transition-colors hover:border-accent hover:text-accent"
             >
               See my work
             </a>
           </div>
         </div>
-        <Image
-          src="/images/profile/profilepic2.jpg"
-          alt={`Portrait of ${siteConfig.name}`}
-          width={256}
-          height={256}
-          priority
-          className="h-64 w-64 shrink-0 rounded-full border border-border object-cover"
-        />
+        <div className="relative shrink-0">
+          <div className="pointer-events-none absolute -inset-2 rounded-full bg-accent/15 blur-2xl" />
+          <Image
+            src="/images/profile/profilepic2.jpg"
+            alt={`Portrait of ${siteConfig.name}`}
+            width={256}
+            height={256}
+            priority
+            className="relative h-64 w-64 rounded-full border border-border-strong object-cover shadow-[0_0_40px_-8px_rgba(79,195,247,0.5)]"
+          />
+        </div>
       </div>
     </section>
   );

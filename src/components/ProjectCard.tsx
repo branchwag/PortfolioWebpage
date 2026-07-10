@@ -7,7 +7,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       href={project.repoUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex flex-col overflow-hidden rounded-lg border border-border bg-surface transition-colors hover:border-accent"
+      className="nr-panel nr-panel-hover group flex flex-col overflow-hidden"
     >
       <div className="relative aspect-video w-full overflow-hidden bg-bg">
         {project.media?.type === "image" ? (
@@ -40,7 +40,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         )}
       </div>
       <div className="flex flex-1 flex-col gap-3 p-6">
-        <h3 className="font-mono text-lg text-text group-hover:text-accent">
+        <h3 className="text-lg text-text transition-colors group-hover:text-accent">
           {project.title}
         </h3>
         <p className="flex-1 text-sm leading-relaxed text-text-muted">
@@ -50,7 +50,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           {project.tech.map((tag) => (
             <li
               key={tag}
-              className="rounded border border-border px-2 py-1 font-mono text-xs text-text-muted"
+              className="border border-border px-2 py-1 text-xs uppercase tracking-wider text-accent/80"
             >
               {tag}
             </li>
