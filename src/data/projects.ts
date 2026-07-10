@@ -57,6 +57,11 @@ export const projects: Project[] = [
       "A convolutional neural network built from scratch in Rust with the burn framework, trained on FashionMNIST.",
     tech: ["Rust", "burn", "Machine Learning"],
     repoUrl: "https://github.com/branchwag/CNN",
+    media: {
+      type: "image",
+      src: "/images/projects/cnn-demo.png",
+      alt: "The CNN training TUI showing a live accuracy plot climbing toward ~90% with loss, epoch, and iteration metrics",
+    },
   },
   {
     slug: "pj",
