@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { siteConfig } from "@/data/site";
+import TypedHeading from "@/components/TypedHeading";
 
 export default function Hero() {
   return (
@@ -7,9 +8,7 @@ export default function Hero() {
       <div className="flex flex-col items-center gap-12 md:flex-row">
         <div className="flex flex-col items-center text-center md:items-start md:text-left">
           <span className="nr-eyebrow mb-5">{"// system online"}</span>
-          <h1 className="text-3xl text-text nr-glow sm:text-4xl">
-            <span className="text-accent">&gt;</span> Hi, I&apos;m LeAnne.
-          </h1>
+          <TypedHeading />
           <p className="mt-6 max-w-xl leading-relaxed text-text-muted">
             I&apos;m a software engineer and master&apos;s student who used to
             work on order flow for fintech companies as a FIX integration
