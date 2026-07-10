@@ -1,32 +1,34 @@
-# Module 2 Challenge - Portfolio Webpage
+# LeAnne Branch — Portfolio
 
-## Description
+My personal portfolio site, built with [Next.js](https://nextjs.org/) (App Router), TypeScript, and Tailwind CSS v4, deployed on [Vercel](https://vercel.com/).
 
-This is a simple portfolio website showcasing a bit of my work. Enjoy! :) 
+Live site: _added after first deploy_
 
-## Installation
+## Featured projects
 
-No installation required! This is a website. 
+- [dndrag](https://github.com/branchwag/dndrag) — a fully local RAG pipeline for querying D&D lore
+- [asteroidtracker](https://github.com/branchwag/asteroidtracker) — a full-stack near-Earth object tracker built on live NASA data
+- [orbitalElements](https://github.com/branchwag/orbitalElements) — an interactive WASM orbital mechanics visualizer
+- [CNN](https://github.com/branchwag/CNN) — a convolutional neural network built from scratch in Rust
+- [Meteorite Impact Site Calculator](https://github.com/branchwag/meteorite_impactsite_calc) — back-calculates meteorite impact sites from radar returns
 
-## Usage
+## Local development
 
-Visit the page here: https://branchwag.github.io/PortfolioWebpage/ 
+```bash
+npm install
+npm run dev
+```
 
-Screenshot below:
+Then open [http://localhost:3000](http://localhost:3000).
 
-![alt text](assets/images/projectscreenshot.png)
+```bash
+npm run build   # production build
+npm run lint    # eslint
+```
 
-## Credits
+## Deployment
 
-Columbia Coding Bootcamp
-
-Background image:
-Photo by Luca Bravo on Unsplash
-https://unsplash.com/@lucabravo
-
-I would also like to thank the writers of this article for helping me figure out my nav bar situation:
-https://dev.to/jungjungie/create-a-navbar-with-css-flexbox-2leh
-
+Deployed on Vercel's free tier via its GitHub integration — pushes to `main` auto-deploy.
 
 ## License
 

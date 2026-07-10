@@ -12,8 +12,8 @@ export default function Hero() {
           <p className="mt-6 max-w-xl leading-relaxed text-text-muted">
             I&apos;m a software engineer and master&apos;s student who used to
             work on order flow for fintech companies as a FIX integration
-            engineer before moving into web and systems development. These
-            days I spend most of my time in Rust, exploring everything from
+            engineer before moving into web and systems development. These days
+            I spend most of my time in Rust, exploring everything from
             local-first AI systems to orbital mechanics simulations. Feel free
             to look around or get in touch below.
           </p>

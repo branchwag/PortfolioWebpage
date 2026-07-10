@@ -17,9 +17,7 @@ export default function Skills() {
             key={group.category}
             className="rounded-lg border border-border bg-surface p-6"
           >
-            <h3 className="font-mono text-sm text-accent">
-              {group.category}
-            </h3>
+            <h3 className="font-mono text-sm text-accent">{group.category}</h3>
             <ul className="mt-4 flex flex-wrap gap-2">
               {group.items.map((item) => (
                 <li
