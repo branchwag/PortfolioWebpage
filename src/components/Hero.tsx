@@ -33,15 +33,15 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div className="relative shrink-0">
-          <div className="pointer-events-none absolute -inset-2 rounded-full bg-accent/15 blur-2xl" />
+        <div className="group relative shrink-0">
+          <div className="pointer-events-none absolute -inset-2 rounded-full bg-accent/15 opacity-65 blur-2xl transition-opacity duration-200 group-hover:opacity-100" />
           <Image
             src="/images/profile/profilepic2.jpg"
             alt={`Portrait of ${siteConfig.name}`}
             width={256}
             height={256}
             priority
-            className="relative h-64 w-64 rounded-full border border-border-strong object-cover shadow-[0_0_40px_-8px_rgba(79,195,247,0.5)]"
+            className="relative h-64 w-64 rounded-full border border-border-strong object-cover shadow-[0_0_28px_-7px_rgba(79,195,247,0.5)] transition duration-200 group-hover:shadow-[0_0_34px_-6px_rgba(79,195,247,0.65)]"
           />
         </div>
       </div>
