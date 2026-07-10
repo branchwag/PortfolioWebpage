@@ -25,19 +25,6 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: "asteroidtracker",
-    title: "asteroidtracker",
-    pitch:
-      "A full-stack near-Earth object tracker pulling live data from NASA, with a custom WebGL2 starfield.",
-    tech: ["Rust", "Leptos", "WASM", "WebGL2", "Docker"],
-    repoUrl: "https://github.com/branchwag/asteroidtracker",
-    media: {
-      type: "image",
-      src: "/images/projects/asteroidtracker-demo.gif",
-      alt: "Demo of the asteroidtracker app showing a sortable table of near-Earth objects over a starfield",
-    },
-  },
-  {
     slug: "orbitalElements",
     title: "orbitalElements",
     pitch:
@@ -51,12 +38,38 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: "asteroidtracker",
+    title: "asteroidtracker",
+    pitch:
+      "A full-stack near-Earth object tracker pulling live data from NASA, with a custom WebGL2 starfield.",
+    tech: ["Rust", "Leptos", "WASM", "WebGL2", "Docker"],
+    repoUrl: "https://github.com/branchwag/asteroidtracker",
+    media: {
+      type: "image",
+      src: "/images/projects/asteroidtracker-demo.gif",
+      alt: "Demo of the asteroidtracker app showing a sortable table of near-Earth objects over a starfield",
+    },
+  },
+  {
     slug: "CNN",
     title: "CNN",
     pitch:
       "A convolutional neural network built from scratch in Rust with the burn framework, trained on FashionMNIST.",
     tech: ["Rust", "burn", "Machine Learning"],
     repoUrl: "https://github.com/branchwag/CNN",
+  },
+  {
+    slug: "pj",
+    title: "pj",
+    pitch:
+      "A fully offline, local-first AI chat app — talk to a self-hosted model via Ollama from your browser or the command line.",
+    tech: ["Rust", "Actix Web", "Ollama", "Streaming"],
+    repoUrl: "https://github.com/branchwag/pj",
+    media: {
+      type: "image",
+      src: "/images/projects/pj-demo.png",
+      alt: "The pj chat interface answering the question 'What is your favorite color?' with a model response",
+    },
   },
   {
     slug: "meteorite_impactsite_calc",
