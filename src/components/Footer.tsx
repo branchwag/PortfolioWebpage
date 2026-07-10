@@ -6,9 +6,10 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-border">
-      <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-6 py-8 text-sm text-text-muted sm:flex-row sm:justify-between">
-        <p>
-          &copy; {year} {siteConfig.name}
+      <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-6 py-8 text-xs tracking-[0.15em] text-text-muted sm:flex-row sm:justify-between">
+        <p className="uppercase">
+          <span className="text-accent/50">&copy;</span> {year}{" "}
+          {siteConfig.name}
         </p>
         <div className="flex items-center gap-4">
           <a

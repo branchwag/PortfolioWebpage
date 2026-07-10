@@ -21,8 +21,12 @@ const links = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-5xl px-6 py-24 text-center">
-      <h2 className="font-mono text-2xl text-text sm:text-3xl">Contact</h2>
+    <section
+      id="contact"
+      className="mx-auto flex max-w-5xl flex-col items-center px-6 py-24 text-center"
+    >
+      <span className="nr-eyebrow mb-4">{"// establish uplink"}</span>
+      <h2 className="text-2xl text-text nr-glow sm:text-3xl">Contact</h2>
       <p className="mx-auto mt-4 max-w-xl text-text-muted">
         The best ways to reach me — feel free to say hello.
       </p>
@@ -33,7 +37,7 @@ export default function Contact() {
             href={href}
             target={href.startsWith("http") ? "_blank" : undefined}
             rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-            className="flex items-center gap-2 rounded border border-border px-5 py-3 text-text transition-colors hover:border-accent hover:text-accent"
+            className="nr-panel nr-panel-hover flex items-center gap-2 px-5 py-3 text-sm text-text hover:text-accent"
           >
             <Icon className="h-5 w-5" />
             {label}
