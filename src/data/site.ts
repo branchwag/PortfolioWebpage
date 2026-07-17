@@ -7,6 +7,6 @@ export const siteConfig = {
   githubUrl: "https://github.com/branchwag",
   linkedinUrl: "https://www.linkedin.com/in/leanne-branch-85581826/",
   resumeUrl:
-    "https://docs.google.com/document/d/1i6kbJ3GgF-hmFAcpj-tvO0HhwoT8Mjiy/edit?usp=sharing&ouid=113238766093841142326&rtpof=true&sd=true",
+    "https://docs.google.com/document/d/1LlntzEx0yVwGo2jB1KL6r3lHY4wP8H8LmjxwF51bVl0/edit?usp=sharing",
   siteUrl: "https://portfolio-webpage-pink-theta.vercel.app",
 } as const;
